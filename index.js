@@ -1,0 +1,33 @@
+$(function(){
+
+    $('#metal').click(function(){
+         $('#cardone').css('display','block');
+         $('#cardtwo').css('display','none');
+         $('#cardthree').css('display','none');
+         $('#metal').addClass('deco');
+         $('#prem').removeClass('deco');
+         $('#bas').removeClass('deco');
+    });
+    $('#prem').click(function(){
+         $('#cardone').css('display','none');
+         $('#cardtwo').css('display','block');
+         $('#cardthree').css('display','none');
+         $('#metal').removeClass('deco');
+         $('#prem').addClass('deco');
+         $('#bas').removeClass('deco'); 
+    });
+    $('#bas').click(function(){
+        $('#cardone').css('display','none');
+        $('#cardtwo').css('display','none');
+        $('#cardthree').css('display','block');
+        $('#metal').removeClass('deco');
+        $('#prem').removeClass('deco');
+        $('#bas').addClass('deco'); 
+    });
+    $('#cross').click(function(){
+        $('#burgermenu').css('display','none');
+    });
+    $('#hamburger').click(function(){
+        $('#burgermenu').css('display','block');
+    });
+})
